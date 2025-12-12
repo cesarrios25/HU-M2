@@ -1,0 +1,55 @@
+Historia de usuario - Semana 1
+
+Creación de portafolio personal con página de mascotas
+Objetivo de la Historia de usuario
+Elaborar dos páginas web aplicando lo aprendido en HTML, HTML5 y CSS:
+Una página principal de Portafolio personal.
+Una página secundaria de Mascotas, enlazada desde el portafolio.
+Con esta tarea, se reforzará la creación de estructuras básicas en HTML5, el uso de etiquetas semánticas, enlaces, imágenes y estilos con CSS.
+Descripción de las tareas
+
+TASK 1
+1. Configuración inicial:
+Crea una carpeta llamada portafolio.
+Dentro de la carpeta, crea dos archivos HTML:
+index.html (será el portafolio)
+mascotas.html (será la página secundaria de mascotas)
+Agrega un archivo styles.css en la misma carpeta para los estilos.
+
+TASK 2
+2. Estructura del portafolio (index.html):
+Define la estructura básica con <!DOCTYPE html>, <html>, <head>, <body>.
+En el <head>, agrega metadatos, título y vincula styles.css.
+Dentro del <body>:
+Crea un encabezado (<header>) con tu nombre y un menú de navegación (<nav>).
+Agrega secciones (<section>) para:
+Sobre mí: breve descripción en un <p>.
+Proyectos: una lista (<ul>) con enlaces simulados.
+Contacto: un formulario básico con <form>, <input> y <button>.
+Incluye un enlace en el menú que lleve a mascotas.html
+
+TASK 3
+3. Estructura de la página de mascotas (mascotas.html):
+Define la misma estructura básica de HTML5.
+En el <header>, coloca un título como “Mis Mascotas”.
+Crea una galería sencilla con <section> que muestre al menos tres imágenes de mascotas usando <img>.
+Agrega una breve descripción de cada mascota dentro de <article>.
+Incluye un enlace (<a>) que permita volver al portafolio (index.html).
+
+TASK 4
+4. Aplicación de estilos (styles.css):
+Aplica una tipografía legible y colores de fondo/texto que diferencien las secciones.
+Usa display, margin y padding para organizar los elementos con el modelo de caja.
+Agrega un hover a los enlaces para que cambien de color al pasar el mouse.
+Opcional: incluye una sombra en las imágenes y un borde redondeado.
+El límite es tu imaginación, si deseas agregar una nueva sección, un nuevo estilo, no hay ningún problema.
+
+Criterios de aceptación
+
+La carpeta contiene los archivos index.html, mascotas.html y styles.css (puedes usar el encarpetado que quieras).
+El portafolio (index.html) incluye encabezado, menú, secciones de presentación, proyectos y contacto.
+El menú de navegación permite ir a la página de mascotas.
+La página de mascotas (mascotas.html) contiene al menos tres imágenes con descripciones.
+Existe un enlace de retorno desde mascotas.html hacia index.html.
+Se aplican estilos CSS: colores, fuentes, márgenes/padding, hover en enlaces y algún borde o sombra.
+El código HTML y CSS está bien estructurado y comentado cuando sea necesario.

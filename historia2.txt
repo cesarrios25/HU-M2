@@ -1,0 +1,41 @@
+Historia de usuario - Semana 2
+
+CSS flexbox y CSS grid layout
+Objetivo de la Historia de usuario
+El objetivo de este taller es retomar el portafolio creado en la Semana 1 y mejorarlo aplicando CSS Flexbox y CSS Grid Layout para organizar, alinear y distribuir los elementos de manera profesional y responsiva dentro de la página.
+
+-- Descripción de las tareas
+
+TASK 1
+1. Preparación del proyecto:
+Abre la carpeta del portafolio de Semana 1.
+Conserva los archivos index.html, mascotas.html y style.css.
+
+TASK 2
+2. Header y navegación con flexbox:
+Convierte el header en un contenedor flexible con display: flex.
+Usa justify-content para distribuir los enlaces de navegación de manera uniforme.
+Aplica align-items para centrar verticalmente el contenido del header.
+
+TASK 3
+3. Sección de proyectos con grid layout:
+Organiza la sección de proyectos usando grid:
+Define display: grid en el contenedor.
+Utiliza grid-template-columns para crear varias columnas.
+Agrega gap entre las tarjetas para separarlas visualmente.
+Opcional: experimenta con grid-area para estructurar distintas secciones del portafolio.
+
+TASK 4
+4. Galeria de mascotas con flexbox y grid:
+Retoma la galería de mascotas (creada en mascotas.html).
+Muestra al menos 6 imágenes en un layout organizado.
+Usa Flexbox para distribuir las imágenes en filas (display: flex; flex-wrap: wrap;).
+Combina con Grid (display: grid; grid-template-columns) para probar distintas formas de organizar las imágenes como mosaicos.
+
+Criterios de aceptación
+Se parte del portafolio de semana 1 y se mejora en la versión portafolio-sem2.
+El header y la navegación usan flexbox para alineación y distribución.
+La sección Proyectos está organizada con CSS grid layout.
+La galería de mascotas.html utiliza flexbox y/o grid para la distribución de imágenes.
+Se aplican correctamente propiedades de flexbox (display: flex, justify-content, align-items, flex-wrap) y de grid (display: grid, grid-template-columns, gap, grid-area).
+El código está indentado, limpio y documentado con comentarios.

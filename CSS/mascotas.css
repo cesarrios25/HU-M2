@@ -1,0 +1,247 @@
+/*  ------------ ESTILO GENERAL ------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    background-color: #000000;
+}
+/*  ------------ ESTILO CONTENEDOR PRINCIPAL Y NAVBAR ------------- */
+ .principal {
+    width: 100%;
+    height: 7rem;
+    margin-bottom: 2.5rem;
+ }
+.navbar {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 4.5rem;
+    width: 100%;
+    padding: 1.8rem;
+    display: flex;
+    justify-content: flex-start;
+}
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+.nav-list li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;     
+    font-weight: 600;
+    letter-spacing: 0.15rem;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.nav-list a:hover {
+    color: #00e1ff;
+    cursor: pointer;
+    transition: 1.2s;
+    border-bottom: 0.5px solid #00e1ff;
+}
+/* ----------- ESTILO MASCOTAS -------------- */
+
+.contenedor_principal_mascotas {
+    width: 100%;
+    height: 100vh;
+    padding: 1.5rem;
+    border: 1px solid red;
+}
+.contenedor-principal_mascotas h1 {
+    font-size: 4rem;
+    text-align: center;
+    color:#fff;
+}
+.contenedor-cards_mascotas {
+    width: 80%;
+    height: auto;
+    margin-top: 2.5rem;    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    margin-bottom: 2rem;
+    margin: 0 auto;
+}
+.cards_mascotas {
+    width: 270px;
+    height: 370px;
+    margin: 3rem 3rem;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 11px rgba(128, 128, 128, 0.829);
+    transition: transform 0.5s ease;
+}
+.cards_mascotas:hover {
+    transform: scale(1.02);
+    box-shadow: 0 2px 29px #00e1ff;
+}
+.cards_mascotas h2 {
+    font-size: 2.5rem;
+    color: #eee8;
+    text-align: center;
+    margin-top: 1rem;
+}
+.cards_mascotas img {
+    width: 220px;
+    margin-top: 2rem;
+    border-radius: 8px;
+    transition: transform 1.4s ease;
+}
+.cards_mascotas img:hover {
+    transform: scale(1.7);
+}
+.cards_mascotas p {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 2rem;
+    font-size: 1.8rem;
+    text-align: justify;
+    color: #fff;
+}
+
+/* --------------------- RESPONSIVE ------------------------ */
+
+@media (max-width: 768px) {
+    .navbar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+        position: absolute;
+        top: 15px;
+        left: 300px;
+        z-index: 1;
+    }
+
+    .hamburger span {
+        width: 28px;
+        height: 2.4px;
+        background: #fff;
+        border-radius: 3px;
+        transition: 0.3s ease;
+    }
+    .nav-list {
+        position: absolute;
+        top: -15px;
+        left: 150px;
+        background: rgba(0, 0, 0, 0.85);
+        width: 90%;
+        flex-direction: column;
+        padding: 10px;
+        display: none;
+        border-radius: 10px;
+        backdrop-filter: blur(6px);
+    }
+
+    .nav-list li a {
+        color: white;
+        font-size: 1.5rem;
+        text-decoration: none;
+    }
+    .nav-list.active {
+        display: flex;
+        position: relative;
+        gap: 2rem;
+        background-color: #0000005e;
+        top: 90px;
+        left: -44px;
+        background: #000;
+        width: 100%;
+        flex-direction: column;
+        padding: 10px;
+        border-radius: 10px;
+        backdrop-filter: blur(6px);
+        justify-content: center;
+        align-items: center;
+    }
+    .hamburger.open span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.open span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+
+    .contenedor-principal_mascotas h1 {
+        font-size: 3rem;
+        text-align: center;
+        color: #fff;
+    }
+    .principal {
+        width: 100%;
+        height: 7rem;
+        margin-bottom: 1rem;
+    }
+    .contenedor-principal_mascotas h1 {
+        font-size: 3rem;
+        text-align: center;
+        color: #fff;
+    }
+    .contenedor-cards_mascotas {
+        width: 95%;
+        height: auto;
+        margin-top: 2.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin: 0 auto;
+    }
+    .cards_mascotas {
+        width: 170px;
+        height: 305px;
+        border-radius: 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 2px 11px rgba(128, 128, 128, 0.829);
+        transition: transform 0.5s ease;
+        margin: 1rem;
+    }
+    .cards_mascotas h2 {
+        font-size: 2rem;
+        color: #eee8;
+        text-align: center;
+    }
+    .cards_mascotas img {
+        width: 155px;
+        margin-top: 2rem;
+        border-radius: 8px;
+        transition: transform 1.4s ease;
+    }
+    .cards_mascotas p {
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 2rem;
+        font-size: 1.4rem;
+        text-align: justify;
+        color: #fff;
+    }
+
+}
+
