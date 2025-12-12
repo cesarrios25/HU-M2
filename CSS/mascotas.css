@@ -199,9 +199,10 @@ body {
         font-size: 3rem;
         text-align: center;
         color: #fff;
+        margin-bottom: 3rem;
     }
     .contenedor-cards_mascotas {
-        width: 95%;
+        width: 100%;
         height: auto;
         margin-top: 2.5rem;
         display: flex;
@@ -225,7 +226,7 @@ body {
     }
     .cards_mascotas h2 {
         font-size: 2rem;
-        color: #eee8;
+        color: #eee;
         text-align: center;
     }
     .cards_mascotas img {
