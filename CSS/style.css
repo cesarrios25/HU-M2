@@ -139,9 +139,9 @@ html {
 }
 
 .social {
-    position: fixed;
-    top: 900px;
-    left: 200px;
+    position: absolute;
+    top: 530px;
+    left: 10px;
     margin-top: 40px;
     font-size: 22px;
 }
@@ -290,11 +290,11 @@ html {
         background-color: rgba(255,255,255,0.2);
     }
     .social {
-        position: fixed;
-        top: 600px;
+        position: absolute;
+        top: 462px;
         left: 15px;
         margin-top: 40px;
-        font-size: 22px;
+        font-size: 18px;
     }
 
     .social i {
